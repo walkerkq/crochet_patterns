@@ -70,3 +70,9 @@ pattern_details = pd.concat(pattern_details_list, sort = False, ignore_index = T
 
 # Write the df to csv
 pattern_details.to_csv('pattern_details.csv', index = False)
+
+
+#pd_subset = pattern_details[['id', 'name', 'pattern_categories']].head()
+#pd_subset['pattern_categories'] = pd_subset['pattern_categories'].apply(ast.literal_eval)
+#my_data = json.loads(pd_subset.to_json(orient = 'records'))
+#json_normalize(my_data, record_path = 'pattern_categories')
